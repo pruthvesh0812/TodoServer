@@ -15,6 +15,10 @@ app.use(cors())
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
+app.get("/",(req,res)=>{
+    console.log("hello")
+})
+
 app.post("/api/insert",(req,res)=>{
    
     const id = req.body.id;
